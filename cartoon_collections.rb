@@ -29,7 +29,7 @@ end
   # Return the first valid call found, or return nil if no valid calls are found
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-  planeteer_calls.include do |element|
-    element.all == valid_calls
+  planeteer_calls.include? do |element|
+    element == valid_calls
   end
 end

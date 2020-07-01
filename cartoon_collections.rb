@@ -2,8 +2,9 @@
   # Return a new array of the results
 
 def square_array(array)
- array.map |sqr|
- 
+ array.map do |element|
+   element * element
+ end
 end
 
 def summon_captain_planet(planeteer_calls)
